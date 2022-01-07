@@ -2,6 +2,8 @@
 
 ## About
 This simple application theme that can be customized with Bootstrap knowledge.
+This theme doesn't use complicated javascript or css.
+Since javascript and css are described in the related part of the html file, it is easy to customize.
 
 ## Explanation
 [Explanation](https://wellknowledge.org/)
