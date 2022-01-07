@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <!-- ============== Header ============== -->
+  <!-- ==================================== -->	
+  <head>
+    <title>Bussiness Draft Process Tool (BDPT)</title>
+    <meta charset="utf-8"/>
+
+    <!-- CDN Jquery Bootstrap bootstrap-datepicker Lightbox Popper Jquery-Parallax typed --><!-- Please Add FontAwesome-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" type="text/javascript"></script>
+	<script src="https://kit.fontawesome.com/8cb82c9050.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.min.js" integrity="sha512-NWNl2ZLgVBoi6lTcMsHgCQyrZVFnSmcaa3zRv0L3aoGXshwoxkGs3esa9zwQHsChGRL4aLDnJjJJeP6MjPX46Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax-min.js" integrity="sha512-ES/eSqVi/9sgeZfvunOto+gwgFGrD/hzi5UOJFDR1Me8acKSBJIb2Gk0IyKje2ZaX+OovAG2/bRzj/uBcNeesg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js" integrity="sha512-zKaK6G2LZC5YZTX0vKmD7xOwd1zrEEMal4zlTf5Ved/A1RrnW+qt8pWDfo7oz+xeChECS/P9dv6EDwwPwelFfQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </head>
+  <!-- ============ End Header ============ -->
+  <!-- ==================================== -->	
+
+ <body>
+    <main>
+	  <!-- ============== Navbar ============== -->
+	  <!-- ==================================== -->	
+      <nav class="navbar-scroll navbar fixed-top navbar-expand-lg navbar-transparent navbar-dark">
+        <div class="container"><a class="navbar-brand" href="#"><span class="text-primary fs-3 ms-2 fw-bolder">Powered by </span><span class="fs-3 ml-5">COMPANY-NAME</span></a>
+          <div class="collapse navbar-collapse pt-4 pt-lg-0">
+            <p class="px-3 mb-0 text-light"><i class="fas fa-cubes"></i><div class="text-light">Powered by XXXXX</div></p>
+            <ul class="navbar-nav ms-auto border-bottom border-lg-bottom-0 pt-2 pt-lg-0">
+              <li class="nav-item px-2"><a class="nav-link active" href="#">Home</a></li>
+              <li class="nav-item px-2"><a class="nav-link" href="#scroll-to-section-list">List</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+	  <style type="text/css">
+	    .navbar-fade { transition: all .5s ease-out; }
+	  </style>
+	  <script>
+		$(window).scroll(function () {
+		  if ($(window).scrollTop() >= 150) {
+			$('.navbar-scroll').css('background','#212529');
+		  } else {
+			$('.navbar-scroll').css('background','transparent');
+			$('.navbar-scroll').addClass('navbar-fade');
+		  }
+		});
+	  </script>
+	  <!-- ============ End Navbar ============ -->
+	  <!-- ==================================== -->	
+	  
+	  <!-- =============== Form =============== -->
+	  <!-- ==================================== -->
+	  <section style="padding-top:10rem; padding-bottom:5rem; background-image: url(https://source.unsplash.com/G9i_plbfDgk);background-size: cover;">
+	    <div class="card bg-dark w-75 mx-auto" style="opacity:0.9; box-shadow: 0 10px 25px 0 rgba(60, 194, 235, 0.5);">
+		  <div class="card-header">
+		    <h3 class="text-light text-center">Confirm New Item</h3>
+		  </div>
+		  <div class="card-body">
+		    <div class="container">
+			  <div class="row">
+			    <form action="index.html#scroll-to-section-list">
+				  <!-- item attribute 01 -->
+				  <div class="row mb-3">
+					<div class="col-md-1"><label for="input_01" class="form-label text-light">A</label></div>
+					<div class="col-md-11">
+					  <input type="text" class="form-control" id="input_01" aria-describedby="msg01" placeholder="A_007" disabled>
+					  <div id="msg01" class="form-text text-light">Input Type: text</div>
+					</div>
+				  </div>
+				  <!-- item attribute 02 -->
+				  <div class="row mb-3">
+				    <div class="col-md-1"><label for="input_02" class="form-label text-light">B</label></div>
+					<div class="col-md-11">
+					  <input type="email" class="form-control" id="input_02" aria-describedby="msg02" placeholder="B_007@mail.com" disabled>
+					  <div id="msg02" class="form-text text-light">Input Type: email</div>
+					</div>
+				  </div>
+				  <!-- item attribute 03 -->
+				  <div class="row mb-3">
+					<div class="col-md-1"><label for="input_03" class="form-label text-light">C</label></div>
+					<div class="col-md-11">
+					  <input type="text" class="form-control datepicker" id="input_03" aria-describedby="msg03" placeholder="9999/99/99" disabled>
+					  <div id="msg03" class="form-text text-light">Input Type: datepicker</div>
+				    </div>
+				  </div>
+				  <!-- item attribute 04 -->
+				  <div class="row mb-3">
+				    <div class="col-md-1"><label class="form-label text-light">D</label></div>
+					<div class="col-md-11">
+					  <select class="form-select" aria-label="select" disabled>
+						<option >Open this select menu</option>
+						<option value="1" selected>One</option>
+						<option value="2">Two</option>
+						<option value="3">Three</option>
+					  </select>
+					  <div class="form-text text-light">Input Type: Select</div>
+					</div>
+				  </div>
+				  <!-- item attribute 05 -->
+				  <div class="row mb-3">
+					<div class="col-md-1">
+					  <label class="form-label text-light">E</label>
+					</div>
+					<div class="col-md-2">
+					  <input type="checkbox" class="form-check-input" id="check01" checked disabled>
+					  <label class="form-check-label text-light" for="check01">Check 01</label>
+					</div>
+					<div class="col-md-2">
+					  <input type="checkbox" class="form-check-input" id="check02" checked disabled>
+					  <label class="form-check-label text-light" for="check02">Check 02</label>
+					</div>
+					<div class="col-md-2">
+					  <input type="checkbox" class="form-check-input" id="check03" disabled>
+					  <label class="form-check-label text-light" for="check03">Check 03</label>
+					</div>
+					<div class="col-md-2">
+					  <input type="checkbox" class="form-check-input" id="check04" disabled>
+					  <label class="form-check-label text-light" for="check04">Check 04</label>
+					</div>
+				  </div>
+				  <!-- Button-->
+				  <button type="submit" class="btn btn-secondary" style="box-shadow: 0 3px 10px 0 rgba(60, 194, 235, 0.5);" formaction="new_item.html" formmethod="GET">Edit</button>
+				  <button type="submit" class="btn btn-primary" style="box-shadow: 0 3px 10px 0 rgba(60, 194, 235, 0.5);" formaction="index.html#scroll-to-section-list" formmethod="GET">Complete</button>
+				</form>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		
+		<!-- Back Button-->
+		<div class="my-5" style="margin-left:15%;">
+		  <a class="h5 text-decoration-none text-light" role="button" href="index.html"><i class="fa fa-angle-double-left"></i>Back to Top</a>
+		</div>
+	  </section>
+	  <!-- ============= End Form ============= -->
+	  <!-- ==================================== -->	
+
+
+	  <!-- ========== Footer Section ========== -->
+	  <!-- ==================================== -->
+	  <style type="text/css">
+		a:visited[role=button],
+		a:hover[role=button],
+		a:visited[role=button]{
+			color: #fff;
+			text-shadow: 0 0 10px #fff,0 0 15px #fff;
+		}
+      </style>
+	  
+      <section class="py-0 bg-dark">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="d-md-flex justify-content-between pb-1 pt-4">
+                <div class="pb-4">
+                  <ul class="widget-list d-flex flex-wrap justify-content-center justify-content-md-start">
+                    <li><a role="button" class="widget-list-link text-decoration-none fs-ms" href="#">Home</a></li>
+                    <li class="ms-4"><a role="button" class="text-decoration-none fs-ms" href="#">About Us</a></li>
+                    <li class="ms-4"><a role="button" class="text-decoration-none fs-ms" href="#">Blog</a></li>
+                    <li class="ms-4"><a role="button" class="text-decoration-none fs-ms" href="#">Services</a></li>
+                    <li class="ms-4"><a role="button" class="text-decoration-none fs-ms" href="#">Terms &amp; Conditions</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-0 bg-dark">
+        <div class="container">
+          <div class="row justify-content-md-between justify-content-evenly py-4">
+            <div class="col-12 col-sm-8 col-md-6 col-lg-auto text-center text-md-start">
+              <p class="fs--1 my-2 text-light text-200">All rights Reserved &copy; Your Company, 2022</p>
+            </div>
+          </div>
+        </div>
+      </section>
+	  <!-- ======== End Footer Section ======== -->
+	  <!-- ==================================== -->	  
+    </main>
+  </body>
+  
+  <!-- Scrolling with navbar -->
+  <script>
+  $(function(){
+    $("a[href^='#scroll-to-']").click(function() {
+		var headerHight = $("nav").innerHeight(); 
+		var speed = 1000;
+		$('body,html').animate({scrollTop: $($(this).attr("href")).offset().top - headerHight }, speed,'swing');
+		return false;
+   });
+  });
+  </script>
+  <!-- Datepicker -->
+  <script>
+    $('.datepicker').datepicker({
+        format: 'yyyy/mm/dd'
+    });
+  </script>
+</html>
