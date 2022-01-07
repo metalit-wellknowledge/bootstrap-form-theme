@@ -58,17 +58,17 @@
 	  <section style="padding-top:10rem; padding-bottom:5rem; background-image: url(https://source.unsplash.com/G9i_plbfDgk);background-size: cover;">
 	    <div class="card bg-dark w-75 mx-auto" style="opacity:0.9; box-shadow: 0 10px 25px 0 rgba(60, 194, 235, 0.5);">
 		  <div class="card-header">
-		    <h3 class="text-light text-center">Edit Item</h3>
+		    <h3 class="text-light text-center">Confirm Edit Item</h3>
 		  </div>
 		  <div class="card-body">
 		    <div class="container">
 			  <div class="row">
-			    <form action="confirm_edit_item.html">
+			    <form action="index.html#scroll-to-section-list">
 				  <!-- item attribute 01 -->
 				  <div class="row mb-3">
 					<div class="col-md-1"><label for="input_01" class="form-label text-light">A</label></div>
 					<div class="col-md-11">
-					  <input type="text" class="form-control" id="input_01" aria-describedby="msg01" value="A_007">
+					  <input type="text" class="form-control" id="input_01" aria-describedby="msg01" placeholder="A_007" disabled>
 					  <div id="msg01" class="form-text text-light">Input Type: text</div>
 					</div>
 				  </div>
@@ -76,7 +76,7 @@
 				  <div class="row mb-3">
 				    <div class="col-md-1"><label for="input_02" class="form-label text-light">B</label></div>
 					<div class="col-md-11">
-					  <input type="email" class="form-control" id="input_02" aria-describedby="msg02" value="B_007@mail.com">
+					  <input type="email" class="form-control" id="input_02" aria-describedby="msg02" placeholder="B_007@mail.com" disabled>
 					  <div id="msg02" class="form-text text-light">Input Type: email</div>
 					</div>
 				  </div>
@@ -84,7 +84,7 @@
 				  <div class="row mb-3">
 					<div class="col-md-1"><label for="input_03" class="form-label text-light">C</label></div>
 					<div class="col-md-11">
-					  <input type="text" class="form-control datepicker" id="input_03" aria-describedby="msg03" value="9999/99/99">
+					  <input type="text" class="form-control datepicker" id="input_03" aria-describedby="msg03" placeholder="9999/99/99" disabled>
 					  <div id="msg03" class="form-text text-light">Input Type: datepicker</div>
 				    </div>
 				  </div>
@@ -92,7 +92,7 @@
 				  <div class="row mb-3">
 				    <div class="col-md-1"><label class="form-label text-light">D</label></div>
 					<div class="col-md-11">
-					  <select class="form-select" aria-label="select">
+					  <select class="form-select" aria-label="select" disabled>
 						<option >Open this select menu</option>
 						<option value="1" selected>One</option>
 						<option value="2">Two</option>
@@ -107,24 +107,25 @@
 					  <label class="form-label text-light">E</label>
 					</div>
 					<div class="col-md-2">
-					  <input type="checkbox" class="form-check-input" id="check01" checked>
+					  <input type="checkbox" class="form-check-input" id="check01" checked disabled>
 					  <label class="form-check-label text-light" for="check01">Check 01</label>
 					</div>
 					<div class="col-md-2">
-					  <input type="checkbox" class="form-check-input" id="check02" checked>
+					  <input type="checkbox" class="form-check-input" id="check02" checked disabled>
 					  <label class="form-check-label text-light" for="check02">Check 02</label>
 					</div>
 					<div class="col-md-2">
-					  <input type="checkbox" class="form-check-input" id="check03">
+					  <input type="checkbox" class="form-check-input" id="check03" disabled>
 					  <label class="form-check-label text-light" for="check03">Check 03</label>
 					</div>
 					<div class="col-md-2">
-					  <input type="checkbox" class="form-check-input" id="check04">
+					  <input type="checkbox" class="form-check-input" id="check04" disabled>
 					  <label class="form-check-label text-light" for="check04">Check 04</label>
 					</div>
 				  </div>
 				  <!-- Button-->
-				  <button type="submit" class="btn btn-primary" style="box-shadow: 0 3px 10px 0 rgba(60, 194, 235, 0.5);">Confirm</button>
+				  <button type="submit" class="btn btn-secondary" style="box-shadow: 0 3px 10px 0 rgba(60, 194, 235, 0.5);" formaction="edit_item.html" formmethod="GET">Edit</button>
+				  <button type="submit" class="btn btn-primary" style="box-shadow: 0 3px 10px 0 rgba(60, 194, 235, 0.5);" formaction="index.html#scroll-to-section-list" formmethod="GET">Complete</button>
 				</form>
 			  </div>
 			</div>
